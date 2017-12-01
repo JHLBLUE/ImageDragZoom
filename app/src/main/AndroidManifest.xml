@@ -16,6 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".ZoomWithoutRectActivity"/>
+        <activity android:name=".ZoomWithRectActivity"/>
     </application>
 
 </manifest>
