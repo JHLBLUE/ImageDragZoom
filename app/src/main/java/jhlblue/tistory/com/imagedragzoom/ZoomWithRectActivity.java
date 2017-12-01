@@ -27,13 +27,13 @@ public class ZoomWithRectActivity extends AppCompatActivity {
 
         originalImage = (ImageView) findViewById(R.id.origin_image);
         zoomedImage = (ImageView) findViewById(R.id.zoomed_image);
-        imageDragZoom = new ImageDragZoom(this, originalImage, zoomedImage, touchView, handler);
-        imageDragZoom.setCropImageTimes(times);
 
         viewGroup = (ViewGroup) findViewById(R.id.linear_layout_parent);
         touchView = LayoutInflater.from(this).inflate(R.layout.view_touch, null);
         viewGroup.addView(touchView);
 
+        imageDragZoom = new ImageDragZoom(this, originalImage, zoomedImage, touchView, handler);
+        imageDragZoom.setCropImageTimes(times);
 
         originalImage.setOnTouchListener(new View.OnTouchListener() {
             @Override
